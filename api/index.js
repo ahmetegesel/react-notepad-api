@@ -7,7 +7,7 @@ export const findInMainDbBy = findBy(connectionString, databaseName);
 
 export const upsertInMainDb = upsert(connectionString, databaseName);
 
-const USERS = 'auth';
+const USERS = 'users';
 const NOTES = 'notes';
 
 export const findUsersBy = findInMainDbBy(USERS);
