@@ -11,6 +11,8 @@ app.use(bodyParser.json());
 
 app.use('/api/v1', v1())
 
-app.listen(process.env.API_PORT, (url) => {
-  console.log('Server is listening port 4000');
+const PORT = process.env.API_PORT;
+
+app.listen(PORT, () => {
+  console.log(`Server is listening port ${PORT}`);
 });
