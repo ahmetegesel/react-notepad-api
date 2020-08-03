@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import bodyParser from 'body-parser';
 
 import './config';
@@ -6,6 +7,12 @@ import './config';
 import v1 from './routers/v1';
 
 const app = new express();
+
+const corsOptions = {
+  origin: process.env.API_ACCEPTED_CORS_ORIGIN
+};
+
+app.use(cors(corsOptions));
 
 app.use(bodyParser.json());
 

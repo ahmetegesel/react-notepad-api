@@ -23,7 +23,8 @@
     "body-parser": "^1.19.0",
     "jsonwebtoken": "^8.5.1",
     "mongofn": "^0.5.1",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "cors": "^2.8.5"
   },
   "devDependencies": {
     "@babel/core": "^7.11.0",
